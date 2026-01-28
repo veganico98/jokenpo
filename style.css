@@ -71,8 +71,8 @@ body, html{
     flex-direction: column;
 }
 .hero{
-    width: 30em;
-    height: 30em;
+    width: 50vw;
+    height: 30vh;
     
 }
 h1, p, h2{
