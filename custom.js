@@ -1,10 +1,10 @@
 function jogar(){
     var botoesOpcoes = document.getElementsByName("botao")
     var opcaoRobo = Math.floor(Math.random() * 3)
-    var opcaoUsuario = ''
-    var img = document.getElementById("hero")
+    var opcaoUsuario = null
     var descricaoRobo = ''
     var descricaoUser = ''
+    var img = document.getElementById("hero")
     var resultado = document.getElementById("res")
     var mensagemFinal = document.createElement('h2')
     mensagemFinal.setAttribute('id', 'mensagemFinal')
@@ -19,7 +19,9 @@ function jogar(){
         window.alert("Escolha uma das opções antes de jogar")
     }
 
-    if(opcaoUsuario != ''){
+    if(opcaoUsuario != null){
+        // console.log(opcaoRobo, opcaoUsuario)
+
         if(opcaoRobo == opcaoUsuario){
             img.setAttribute('src', './img/03.png')
             window.alert("empate")
